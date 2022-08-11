@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFECE6"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp"
+            android:paddingTop="20sp"
+            tools:context=".MainActivity">
+
+
+            <TextView
+                android:id="@+id/input"
+                android:background="@drawable/but_scrol2"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_marginBottom="3sp"
+                android:hint=""
+                android:textSize="40sp"
+                android:layout_marginTop="20sp"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:gravity="fill_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/output"
+                android:background="@drawable/but_scrol2"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:text=""
+                android:textSize="60sp"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:layout_marginTop="8sp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/clearAll"
+                    android:layout_width="90sp"
+                    android:background="@drawable/but_scrol2"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="C"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+
+                <!--<androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bra"
+                    android:background="@drawable/but_scrol2"
+
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="()"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/modils"
+
+                    android:background="@drawable/but_scrol2"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_weight="0"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="%"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/div"
+                    android:background="@drawable/but_scrol2"
+
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_weight="0"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="/"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/seven"
+                    android:background="@drawable/button_sercal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="7"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/eghit"
+                    android:background="@drawable/button_sercal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="8"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nine"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="9"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sub"
+
+                    android:background="@drawable/but_scrol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/four"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="0dp"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="4"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/five"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="0dp"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="5"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/six"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="0dp"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sum"
+
+                    android:background="@drawable/but_scrol2"
+                    android:layout_width="0dp"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/one"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/two"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/three"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/mult"
+
+                    android:background="@drawable/but_scrol2"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="x"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dobleZe"
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/zero"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dot"
+
+                    android:background="@drawable/button_sercal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="."
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/equal"
+
+                    android:background="@drawable/but_scrol2"
+                    android:layout_width="match_parent"
+                    android:layout_height="90sp"
+                    android:layout_weight="4"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text="="
+                    android:textColor="@color/black"
+                    android:textSize="35sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>
+
